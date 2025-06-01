@@ -10,6 +10,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:3000",
   "https://upfound-backend.vercel.app",
+  "https://upfound-frontend-adidecodes-adidecodes-projects.vercel.app",
 ];
 
 app.use(
