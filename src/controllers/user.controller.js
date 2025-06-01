@@ -29,7 +29,7 @@ export const getUserById = async (req, res) => {
     const totalSubmissions = await productModel.countDocuments({
       submittedBy: user._id,
     });
-    const totalVotes = await upvoteModel.countDocuments({ userId: user._id });
+    const totalVotes = await upvoteModel.countDocuments({ user: user._id });
     const { __v, ...userDoc } = user._doc;
     res.status(200).json({ ...userDoc, totalSubmissions, totalVotes });
   } catch (error) {

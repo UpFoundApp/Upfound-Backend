@@ -24,13 +24,7 @@ router.put("/:id/upvote", isAuthenticated, product.toggleVote);
 router.delete("/:id", isAuthenticated, product.deleteProduct);
 // Add a comment to a product
 router.post("/:id/comment", isAuthenticated, product.addComment);
-// // Remove upvote from a product
-// router.delete("/:id/upvote", isAuthenticated, product.removeUpvote);
-// Get all comments for a product
+// Get comments for a product
 router.get("/:id/comments", product.getProductComments);
-// // Get all upvotes for a product
-// router.get("/:id/upvotes", product.getProductUpvotes);
-// // Get products by search query
-// router.get("/search", product.searchProducts);
 
 export default router;
