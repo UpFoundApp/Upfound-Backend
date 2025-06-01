@@ -9,7 +9,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://your-production-domain.com",
+  "https://upfound-backend.vercel.app",
 ];
 
 app.use(
